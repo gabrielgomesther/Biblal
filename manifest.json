@@ -1,0 +1,49 @@
+{
+  "id": "./?pwa=suite-biblica-unificada-365-teologia",
+  "name": "Suíte Bíblica Unificada: Bíblia Cronológica 365 & Teologia Bíblica",
+  "short_name": "Bíblia & Teologia",
+  "description": "Plano de leitura cronológica da Bíblia em 365 dias (12 Fases, 1.189 capítulos) unificado à Grade Curricular de Teologia Bíblica (7 Eixos, 28 Fases, 112 Módulos, 827 questões e caderno pessoal) — 100% offline.",
+  "lang": "pt-BR",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": [
+    "standalone",
+    "minimal-ui"
+  ],
+  "orientation": "any",
+  "background_color": "#0b1730",
+  "theme_color": "#0b1730",
+  "categories": [
+    "education",
+    "books",
+    "reference"
+  ],
+  "icons": [
+    {
+      "src": "./icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "./icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
