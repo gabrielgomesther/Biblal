@@ -3,11 +3,10 @@ name: Descompactar e Publicar
 on:
   push:
     branches: [ main ]
+  workflow_dispatch:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 jobs:
   unzip-and-push:
@@ -16,11 +15,11 @@ jobs:
       - name: Baixar código do repositório
         uses: actions/checkout@v4
 
-      - name: Descompactar arquivos .zip e remover o zip original
+      - name: Descompactar arquivos .zip (ignorando workflows internos)
         run: |
           for z in *.zip; do
             if [ -f "$z" ]; then
-              unzip -o "$z" -d .
+              unzip -o "$z" -x ".github/*" -d .
               rm "$z"
             fi
           done
